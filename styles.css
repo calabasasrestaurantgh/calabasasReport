@@ -1,0 +1,67 @@
+body{
+	text-align: center;
+}
+
+.backgroundImage{
+	min-height: 100vh;
+	display: contents;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.backgroundImage::before{
+	content: '';
+ 	background-image: url("calabasas report background.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-position: center;
+  	position: absolute;
+  	top:0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	opacity: 0.45;
+
+}
+
+.yasMargin{
+	margin-left: 4%;
+}
+
+section{
+	margin: 60px;
+}
+
+button{
+	width: 220px;
+	margin-top: 25px;
+	position: relative;
+}
+
+.fdt{
+	width: 250px;
+}
+
+.calabasasReport{
+	margin-top: 9%;
+	margin-bottom: 2%;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 2.35rem;
+	position: relative;
+}
+
+footer{
+	margin-top: 10%;
+	margin-bottom: 2%;
+}
+
+.contact{
+	font-size: 12px;
+	font-weight: bold;
+	position: relative;
+}
