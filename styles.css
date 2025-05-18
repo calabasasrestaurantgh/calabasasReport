@@ -30,12 +30,16 @@ body{
 	margin-left: 4%;
 }
 
+.syb{
+padding-top: 10px;
+}
+
 section{
 	margin: 60px;
 }
 
 button{
-	width: 220px;
+	width: 260px;
 	margin-top: 25px;
 	position: relative;
 }
@@ -56,7 +60,7 @@ h1{
 }
 
 footer{
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-bottom: 2%;
 }
 
@@ -65,3 +69,4 @@ footer{
 	font-weight: bold;
 	position: relative;
 }
+
