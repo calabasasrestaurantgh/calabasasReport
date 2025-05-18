@@ -5,68 +5,123 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Calabasas Report</title>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<style>
+		.branch-section {
+			display: none;
+		}
+		.active-branch {
+			display: block;
+		}
+	</style>
 </head>
 
 <body>
 
-	 <!-- Navigation Bar -->
-<!--     <section id="title" class="colored-section">
-      <div class="navContainer container-fluid">
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-    <a class="yasMargin navbar-brand" href=""><h6>CALABASAS REPORT</h6></a>
+<!-- Navigation Bar -->
+<section id="title" class="colored-section">
+	<div class="navContainer container-fluid">
+		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+			<a class="yasMargin navbar-brand" href="#"><h6 class="syb">SELECT YOUR BRANCH</h6></a>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a id="btn-haatso" class="nav-link active" href="#">HAATSO</a>
+				</li>
+				<li class="nav-item">
+					<a id="btn-akweteyman" class="nav-link" href="#">AKWETEYMAN</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</section>
 
-    </nav>
-      </div>
-    </section>
- -->
-
-	<section class="calabasasReport">
+<!-- HAATSO Section -->
+<section class="calabasasReport branch-section active-branch" id="haatso-section">
+	<div>
+		<h1>CALABASAS REPORT - HAATSO</h1>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://forms.gle/peqm4cpeRJny2Wxu7" target="_blank"><button class="btn btn-primary btn-lg">EXPENSES</button></a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://forms.gle/EWMDq3wch9qsCzcz6" target="_blank"><button class="btn btn-primary btn-lg">FOOD & DRINKS</button></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://docs.google.com/spreadsheets/d/1fUBJJZj-ZT18ZVGFIo1NT2m1DdujXM4vewCPtyrb9R4/edit#gid=1918417919" target="_blank"><button class="btn btn-secondary btn-lg">EXPENSE TABLE</button></a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://docs.google.com/spreadsheets/d/1fUBJJZj-ZT18ZVGFIo1NT2m1DdujXM4vewCPtyrb9R4/edit#gid=2037630648" target="_blank"><button class="btn btn-secondary btn-lg">FOOD & DRINKS TABLE</button></a>
+		</div>
+	</div>
+	<div class="row">
 		<div>
-			<h1>CALABASAS REPORT</h1>
+			<a href="https://docs.google.com/spreadsheets/d/1JL-Y-0YuNe5j0cll57_6nkDkqkz1krBOmQ6HtIZJo9k/edit?usp=sharing" target="_blank"><button class="btn btn-danger btn-lg">MANAGEMENT</button></a>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<section>
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<a href="https://forms.gle/peqm4cpeRJny2Wxu7" target="_blank"><button type="button" class="btn btn-primary btn-lg">EXPENSES</button></a>
-			</div>
-
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<a href="https://forms.gle/EWMDq3wch9qsCzcz6" target="_blank"><button type="button" class="btn btn-primary btn-lg">FOOD & DRINKS</button></a>
-			</div>
-
+<!-- AKWETEYMAN Section -->
+<section class="calabasasReport branch-section" id="akweteyman-section">
+	<div><h1>CALABASAS REPORT - AKWETEYMAN</h1></div>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://forms.gle/Jm8fnq5Uk3Ba15DPA" target="_blank"><button class="btn btn-primary btn-lg">EXPENSES</button></a>
 		</div>
-
-		<div class="row">
-			
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<a href="https://docs.google.com/spreadsheets/d/1fUBJJZj-ZT18ZVGFIo1NT2m1DdujXM4vewCPtyrb9R4/edit#gid=1918417919" target="_blank"><button type="button" class="btn btn-secondary btn-lg">EXPENSE TABLE</button></a>
-			</div>
-
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<a href="https://docs.google.com/spreadsheets/d/1fUBJJZj-ZT18ZVGFIo1NT2m1DdujXM4vewCPtyrb9R4/edit#gid=2037630648" target="_blank"><button type="button" class="btn fdt btn-secondary btn-lg">FOOD & DRINKS TABLE</button></a>
-			</div>
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://forms.gle/saKWWwHkMVjxmcQY6" target="_blank"><button class="btn btn-primary btn-lg">FOOD & DRINKS</button></a>
 		</div>
-
-		<div class="row">
-			<div>
-				<a href="https://docs.google.com/spreadsheets/d/1JL-Y-0YuNe5j0cll57_6nkDkqkz1krBOmQ6HtIZJo9k/edit?usp=sharing" target="_blank"><button type="button" class="btn btn-danger btn-lg">MANAGEMENT</button></a>
-			</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://docs.google.com/spreadsheets/d/1fUBJJZj-ZT18ZVGFIo1NT2m1DdujXM4vewCPtyrb9R4/edit?gid=1896055066#gid=1896055066" target="_blank"><button class="btn btn-secondary btn-lg">EXPENSE TABLE</button></a>
 		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="https://docs.google.com/spreadsheets/d/1fUBJJZj-ZT18ZVGFIo1NT2m1DdujXM4vewCPtyrb9R4/edit?gid=1724807696#gid=1724807696" target="_blank"><button class="btn btn-secondary btn-lg">FOOD & DRINKS TABLE</button></a>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<a href="https://docs.google.com/spreadsheets/d/1JL-Y-0YuNe5j0cll57_6nkDkqkz1krBOmQ6HtIZJo9k/edit?gid=1523990389#gid=1523990389" target="_blank"><button class="btn btn-danger btn-lg">MANAGEMENT</button></a>
+		</div>
+	</div>
+</section>
 
+<footer>
+	<p class="contact">dopa solutions +233(0)50-492-2411</p>
+</footer>
 
-	</section>
+<!-- JavaScript for switching sections -->
+<script>
+	const btnHaatso = document.getElementById("btn-haatso");
+	const btnAkweteyman = document.getElementById("btn-akweteyman");
 
+	const haatsoSection = document.getElementById("haatso-section");
+	const akweteymanSection = document.getElementById("akweteyman-section");
 
-	<footer>
-			<p class="contact">dopa solutions  +233(0)50-492-2411</p>
-	</footer>
+	btnHaatso.addEventListener("click", function(e) {
+		e.preventDefault();
+		btnHaatso.classList.add("active");
+		btnAkweteyman.classList.remove("active");
+		haatsoSection.classList.add("active-branch");
+		akweteymanSection.classList.remove("active-branch");
+	});
+
+	btnAkweteyman.addEventListener("click", function(e) {
+		e.preventDefault();
+		btnAkweteyman.classList.add("active");
+		btnHaatso.classList.remove("active");
+		akweteymanSection.classList.add("active-branch");
+		haatsoSection.classList.remove("active-branch");
+	});
+</script>
 
 </body>
 </html>
